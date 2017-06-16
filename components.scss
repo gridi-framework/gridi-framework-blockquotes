@@ -1,0 +1,6 @@
+blockquote {
+    @include include-element-margin($blockquote-margin-top, $blockquote-margin-bottom, $blockquote-margin-left, $blockquote-margin-right, $blockquote-margin-for-screens);
+    border: 0;
+    border-left: $blockquote-border-left;
+    padding: $blockquote-padding;
+}

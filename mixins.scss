@@ -1,0 +1,15 @@
+@mixin include-blockquote-colors($border-color) {
+    border-color: $border-color;
+}
+
+@mixin blockquote-colors($border-color) {
+    blockquote {
+        @include include-blockquote-colors($border-color);
+    }
+}
+
+@mixin class-blockquote-colors($class, $border-color) {
+    blockquote.#{$class} {
+        @include include-blockquote-colors($border-color);
+    }
+}
