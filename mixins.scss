@@ -1,0 +1,20 @@
+@mixin include-blockquote-colors($colors-map) {
+    @if map-has-key($colors-map, border-color) and map-get($colors-map, border-color) {
+        border-color: map-get($colors-map, border-color);
+    }
+    @if map-has-key($colors-map, color) and map-get($colors-map, color) {
+        color: map-get($colors-map, color);
+    }
+}
+
+@mixin blockquote-colors($colors-map) {
+    blockquote {
+        @include include-blockquote-colors($colors-map);
+    }
+}
+
+@mixin class-blockquote-colors($class, $colors-map) {
+    blockquote.#{$class} {
+        @include include-blockquote-colors($colors-map);
+    }
+}
