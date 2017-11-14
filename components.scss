@@ -1,6 +1,47 @@
 blockquote {
-    @include include-element-margin($blockquote-margin-top, $blockquote-margin-bottom, $blockquote-margin-left, $blockquote-margin-right, $blockquote-margin-for-screens);
-    border: 0;
-    border-left: $blockquote-border-left;
-    padding: $blockquote-padding;
+    @include margin-shorthand-with-screens-support((
+        top: $blockquote-margin-top,
+        bottom: $blockquote-margin-bottom,
+        left: $blockquote-margin-left,
+        right: $blockquote-margin-right
+    ), $blockquote-margin-for-screens);
+    @include border-shorthand((
+        border: (
+            width: $blockquote-border-width,
+            style: $blockquote-border-style,
+            color: $blockquote-border-color,
+            make-shorthand: true
+        ),
+        border-top: (
+            width: $blockquote-border-top-width,
+            style: $blockquote-border-top-style,
+            color: $blockquote-border-top-color,
+            make-shorthand: $blockquote-border-top-make-shorthand
+        ),
+        border-bottom: (
+            width: $blockquote-border-bottom-width,
+            style: $blockquote-border-bottom-style,
+            color: $blockquote-border-bottom-color,
+            make-shorthand: $blockquote-border-bottom-make-shorthand
+        ),
+        border-left: (
+            width: $blockquote-border-left-width,
+            style: $blockquote-border-left-style,
+            color: $blockquote-border-left-color,
+            make-shorthand: $blockquote-border-left-make-shorthand
+        ),
+        border-right: (
+            width: $blockquote-border-right-width,
+            style: $blockquote-border-right-style,
+            color: $blockquote-border-right-color,
+            make-shorthand: $blockquote-border-right-make-shorthand
+        )
+    ));
+    @include padding-shorthand-with-screens-support((
+        top: $blockquote-padding-top, 
+        bottom: $blockquote-padding-bottom, 
+        left: $blockquote-padding-left, 
+        right: $blockquote-padding-right
+    ), $blockquote-padding-for-screens);
+    @include blockquote-extra-style();
 }
