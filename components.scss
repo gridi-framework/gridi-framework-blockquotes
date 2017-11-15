@@ -37,11 +37,11 @@ blockquote {
             make-shorthand: $blockquote-border-right-make-shorthand
         )
     ));
-    @include padding-shorthand-with-screens-support((
+    @include padding-shorthand((
         top: $blockquote-padding-top, 
         bottom: $blockquote-padding-bottom, 
         left: $blockquote-padding-left, 
         right: $blockquote-padding-right
-    ), $blockquote-padding-for-screens);
+    ));
     @include blockquote-extra-style();
 }

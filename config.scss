@@ -45,17 +45,6 @@ $blockquote-padding-top: 0 !default;
 $blockquote-padding-bottom: 0 !default;
 $blockquote-padding-left: 1em !default;
 $blockquote-padding-right: 0 !default;
-//Defined paddings for each screens.
-$blockquote-padding-for-screens: () !default;
-/*$blockquote-padding-for-screens: (
-    s1: (
-        top: 20px, //Not required. Define only the paddings values you want to change. Example - s2: ( top: 20px ) - change only top padding for screens greater than s2
-        bottom: 20px,
-        left: 20px,
-        right: 20px,
-    ),
-    ...
-) !default;*/
 
 //Extra style
 @mixin blockquote-extra-style() {}
