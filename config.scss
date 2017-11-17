@@ -1,7 +1,7 @@
 //Margins
 $blockquote-margin-top: $elements-margin-top !default;
 $blockquote-margin-bottom: $elements-margin-bottom !default;
-$blockquote-margin-left: 1em !default;
+$blockquote-margin-left: 1rem !default;
 $blockquote-margin-right: $elements-margin-right !default;
 $blockquote-margin-for-screens: () !default;
 
@@ -20,7 +20,7 @@ $blockquote-border-bottom-style: null !default;
 $blockquote-border-bottom-color: null !default;
 $blockquote-border-bottom-make-shorthand: false !default;
 
-$blockquote-border-left-width: 0.2em !default;
+$blockquote-border-left-width: 0.2rem !default;
 $blockquote-border-left-style: solid !default;
 $blockquote-border-left-color: $primary-color !default;
 $blockquote-border-left-make-shorthand: true !default;
@@ -33,7 +33,7 @@ $blockquote-border-right-make-shorthand: false !default;
 //Paddings
 $blockquote-padding-top: 0 !default;
 $blockquote-padding-bottom: 0 !default;
-$blockquote-padding-left: 1em !default;
+$blockquote-padding-left: 1rem !default;
 $blockquote-padding-right: 0 !default;
 
 //Extra style
