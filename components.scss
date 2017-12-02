@@ -5,38 +5,20 @@ blockquote {
         left: $blockquote-margin-left,
         right: $blockquote-margin-right
     ), $blockquote-margin-for-screens);
-    @include border-shorthand((
+    @include border-shorthand(map-merge((
         border: (
             width: $blockquote-border-width,
             style: $blockquote-border-style,
             color: $blockquote-border-color,
             make-shorthand: true
         ),
-        border-top: (
-            width: $blockquote-border-top-width,
-            style: $blockquote-border-top-style,
-            color: $blockquote-border-top-color,
-            make-shorthand: $blockquote-border-top-make-shorthand
-        ),
-        border-bottom: (
-            width: $blockquote-border-bottom-width,
-            style: $blockquote-border-bottom-style,
-            color: $blockquote-border-bottom-color,
-            make-shorthand: $blockquote-border-bottom-make-shorthand
-        ),
         border-left: (
             width: $blockquote-border-left-width,
             style: $blockquote-border-left-style,
             color: $blockquote-border-left-color,
             make-shorthand: $blockquote-border-left-make-shorthand
-        ),
-        border-right: (
-            width: $blockquote-border-right-width,
-            style: $blockquote-border-right-style,
-            color: $blockquote-border-right-color,
-            make-shorthand: $blockquote-border-right-make-shorthand
         )
-    ));
+    ), $blockquote-borders));
     @include padding-shorthand((
         top: $blockquote-padding-top, 
         bottom: $blockquote-padding-bottom, 

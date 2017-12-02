@@ -10,25 +10,12 @@ $blockquote-border-width: 0 !default;
 $blockquote-border-style: null !default;
 $blockquote-border-color: null !default;
 
-$blockquote-border-top-width: null !default;
-$blockquote-border-top-style: null !default;
-$blockquote-border-top-color: null !default;
-$blockquote-border-top-make-shorthand: false !default;
-
-$blockquote-border-bottom-width: null !default;
-$blockquote-border-bottom-style: null !default;
-$blockquote-border-bottom-color: null !default;
-$blockquote-border-bottom-make-shorthand: false !default;
-
 $blockquote-border-left-width: 0.2rem !default;
 $blockquote-border-left-style: solid !default;
 $blockquote-border-left-color: $primary-color !default;
 $blockquote-border-left-make-shorthand: true !default;
 
-$blockquote-border-right-width: null !default;
-$blockquote-border-right-style: null !default;
-$blockquote-border-right-color: null !default;
-$blockquote-border-right-make-shorthand: false !default;
+$blockquote-borders: () !default;
 
 //Paddings
 $blockquote-padding-top: 0 !default;
