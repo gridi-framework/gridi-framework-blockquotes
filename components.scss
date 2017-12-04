@@ -25,5 +25,7 @@ blockquote {
         left: $blockquote-padding-left, 
         right: $blockquote-padding-right
     ));
-    @include blockquote-extra-style();
+    @if mixin-exists(blockquote-extra-style) {
+        @include blockquote-extra-style();
+    }
 }

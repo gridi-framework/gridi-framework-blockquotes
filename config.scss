@@ -24,4 +24,4 @@ $blockquote-padding-left: 1rem !default;
 $blockquote-padding-right: 0 !default;
 
 //Extra style
-@mixin blockquote-extra-style() {}
+//@mixin blockquote-extra-style() {} //Create this mixin before import module when you want add some special style for element
