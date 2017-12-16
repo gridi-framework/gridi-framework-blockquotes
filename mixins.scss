@@ -10,12 +10,12 @@
 
 @mixin blockquote-colors($colors-map) {
     blockquote {
-        @include include-blockquote-colors($colors-map);
+        @include blockquote-colors-propertys($colors-map);
     }
 }
 
 @mixin class-blockquote-colors($class, $colors-map) {
     blockquote.#{$class} {
-        @include include-blockquote-colors($colors-map);
+        @include blockquote-colors-propertys($colors-map);
     }
 }
